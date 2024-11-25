@@ -1,0 +1,344 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a:link {
+    color: #49ffaa;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:#49ffaa;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #49ffaa;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: #49ffaa;
+    text-decoration: none;
+  }
+  /* Body */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #1a593c);
+    color: #fff;
+    font-size: 22px;
+    cursor: crosshair;
+    
+
+  }
+  html {
+    font-size: 18px; /* Set a base font size (e.g., 18px) */
+  }
+  
+  .about h2 {
+    font-size: 2rem; /* 2 times the base size (36px) */
+  }
+  
+  .about-text {
+    font-size: 1.2rem; /* 1.2 times the base size (21.6px) */
+  }
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0; /* Pin the navbar to the top */
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #1a593c;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    cursor: crosshair;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    color: #1a593c;
+  }
+/* Bongo Cat in Navbar */
+.bongo-cat {
+    position: absolute; /* Position it independently of the navbar */
+    right: 700px; /* Align to the right inside the navbar */
+    top: 50%; /* Vertically center within the navbar */
+    transform: translateY(-29%); /* Correct vertical centering */
+    width: 110px; /* Set the size of the Bongo Cat */
+    height: auto; /* Maintain the aspect ratio */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 10; /* Ensure it stays on top */
+    cursor: crosshair;
+  }
+  
+  .bongo-cat img {
+    width: 100%; /* Make the image fit the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+/* Adjust hero section to push the navbar up */
+.hero {
+    height: calc(100vh); /* Subtract navbar height */
+    padding-top: 80px; /* Add space for the navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: crosshair;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  
+  .hero-content .highlight {
+    color: #1a593c;
+  }
+  
+  .tagline {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .btn-primary {
+    padding: 0.8rem 1.5rem;
+    background: #1a593c;
+    cursor: crosshair;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  .btn-primary a{
+    text-decoration: none;
+  }
+  
+  .btn-primary:hover {
+    background: #2e7c55;
+  }
+  /* About Section */
+.about {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.175); /* Subtle background contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add soft shadow */
+    margin: 2rem;
+    backdrop-filter: blur(100px);
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    flex: 1 1 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .about-text .highlight {
+    color: #1a593c;
+    font-weight: bold;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+  
+  .skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skills-list li span {
+    font-size: 1.5rem;
+    color: #1a593c;
+  }
+  
+  .about-image {
+    flex: 1 1 40%;
+    text-align: center;
+  }
+  
+  .about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #1a593c;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add depth */
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 4rem 2rem;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #5dc095;
+  }
+  
+  .contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact input{
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    
+  }
+  .contact textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  
+  .contact button {
+    padding: 1rem;
+    background: #1a593cb5;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: crosshair;
+  }
+  /* Social Icons Container */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Spacing between icons */
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: white; /* Icon color */
+  font-size: 1.5rem; /* Icon size */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease;
+  cursor: crosshair;
+}
+
+.social-icons a:hover {
+  color: #1a593c; /* Change color on hover */
+}
+
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+    margin-top: 1rem;
+    color: #1a593c; /* Success green color */
+    background: rgba(26, 89, 60, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+  }
+/* Centered styling for the success message box */
+.info-box {
+  position: fixed; /* Makes it float above the main content */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for the center alignment */
+  background-color: #1a593c; /* Success green */
+  color: white;
+  padding: 2em 3em; /* Increase padding for a bigger box */
+  border-radius: 12px; /* Optional: Adjust corner roundness */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow for emphasis */
+  font-size: 1.5rem; /* Increase font size */
+  text-align: center; /* Ensure text is centered */
+  z-index: 1000; /* Ensure it stays above other content */
+  opacity: 0; /* Initially invisible */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.info-box.visible {
+  opacity: 1; /* Makes it visible */
+  transform: translate(-50%, -50%) scale(1); /* Keeps it in the center */
+}
+
+.info-box.hidden {
+  opacity: 0; /* Fades it out */
+  transform: translate(-50%, -50%) scale(0.9); /* Adds a slight shrinking effect */
+}
+
+
+  
